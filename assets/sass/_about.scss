@@ -1,0 +1,77 @@
+/* about us section */ 
+@import "./variable";
+.about {
+  width: 100%;
+  padding: 50px 0 0;
+  text-align: center;
+
+  &__title {
+    font-size: 2.25rem;
+    font-weight: 300;
+    padding-top: 20px;
+  }
+
+  &__line {
+    width: 47px;
+    height: 3px;
+    margin: 28px auto;
+    background-color: #d03379;
+    text-align: center;
+    // margin: 28px ;
+  }
+
+  &__desc {
+    // width: 90%;
+    font-weight: 300;
+    font-size: 1.875rem;
+    text-align: center;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0;
+    gap: 70px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+  }
+
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+
+    &-info {
+      width: 95%;
+      padding: 30px 20px 20px;
+      background-color: #d03379;
+      color: #fff;
+      flex: 1;
+      transform: translate(60px, -100px);
+
+      @media screen and (max-width: 576px) {
+        transform: translate(40px, -100px);
+      }
+    }
+
+    &-title {
+      font-weight: 300;
+      font-size: 1.875rem;
+    }
+
+    &-desc {
+      padding: 26px 0;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    &-link {
+      font-size: 1rem;
+      color: #fff;
+    }
+  }
+}
